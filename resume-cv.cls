@@ -387,7 +387,7 @@
 }
 
 % Usage: Increase right margin in entries that look odd going to \textwidth
-\newenvironment{onecolumncventry}[1][1]{%
+\newenvironment{onecolumncventry}[1][0.88]{%
 \begin{minipage}[t]{#1\textwidth}
 }{
 \end{minipage}

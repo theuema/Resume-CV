@@ -7,8 +7,9 @@ Resume, CV and Coverletter in LaTeX!
 <br>
 
 *View/Download my current ...*
-- [CV as one-column layout](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
-- [CV as two-column layout](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
+- [Resume](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf)
+- [CV (one-column layout)](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
+- [CV (two-column layout)](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
 
 ## CV one-column layout [Preview}
 ![Preview](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv.png)

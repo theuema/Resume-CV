@@ -34,10 +34,24 @@
 %-----------------------------------------------------------
 \vfill
 \begin{minipage}[t]{\textwidth}
+    %-------------------------------------------------------
+	%-------------------- SUMMARY
+	%-------------------------------------------------------
+    % E.g.: for left alignement use \onecolumnsection{Sectionname}
+    \onecolumnsectionheader{Summary}{R}
+    
+    Skilled DevOps Engineer, passionate in automating everyday workflows, code integration, and software deployment to cut development time, lowering costs, and improve code quality. Strong interest to further gain experience in storing and managing big data, acquiring knowledge using Machine/Deep Learning models, and data visualization as part of a motivated team.
+    \subsectionsep
+
+    Graduated in Software Engineering and Management from Graz University of Technology. Skilled in C, C++, Java, JavaScript, Python, Bash, SQL, Docker, several ML frameworks, working collaboratively, and industrial sociology.
+    \subsectionsep
+    
+    Demonstrated history of working in the semiconductor industry for several- and software industry for over two years.\\
+    Therefore, taking the initiative is one of my strengths, as is documenting new findings.
+
 	%-------------------------------------------------------
 	%-------------------- EDUCATION
 	%-------------------------------------------------------
-    % E.g.: for left alignement use \onecolumnsection{Sectionname}
     \onecolumnsectionheader{Education}{R}
     
     \org{Graz University of Technology}{Graz, Austria}
@@ -57,11 +71,34 @@
     % \org{BFI}{Klagenfurt, Austria} %Berufsförderungsinstitut (BFI)
     % \studypos{Berufsreifeprüfung}{}{Oct 2012 - Feb 2014}
 
+    %-------------------------------------------------------
+	%-------------------- COURSEWORK 
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Coursework}{R}
+    
+    \begin{onecolumncventry}
+        \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
+            \runsheader{M.Sc. degree program:}&
+            Knowledge Discovery \& Data Mining \bulletsep Machine Learning \bulletsep Deep Learning 
+            \par Web Technology (HTML5) \bulletsep Expert Systems \bulletsep Verification \& Testing 
+            \par Security Aspects in Software Development \bulletsep Principles of Brain Computation
+            \par General Management \& Organization \bulletsep Strategic \& Innovation Management \par Stress \& Time Management
+            \\&\\
+            \runsheader{B.Sc. degree program:}&
+            Data Structures \& Algorithms \bulletsep Statistics \& Probability \bulletsep Computer Vision 
+            \par Linear Algebra \& Analysis \bulletsep Computational Intelligence 
+            \bulletsep Operating Systems 
+            \par Software Maintenance \bulletsep IT Security \& Networking \bulletsep Intercultural Social Competence 
+            \bulletsep Industrial Sociology
+            \\
+        \end{tabularx}
+    \end{onecolumncventry}
+
 	%-------------------------------------------------------
 	%-------------------- SKILLS
 	%-------------------------------------------------------
     \onecolumnsectionheader{Skills}{R}
-
+    
     \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
         \runsheader{Operating Systems:}&
         \faApple\space\space macOS x86-64/ARM64 \par
@@ -88,22 +125,7 @@
         Conda \par Python-venv \bulletsep Terminal \bulletsep Tmux \bulletsep
         Various Unix tools improving workflows
         \\
-    
     \end{tabularx}
-
-    %-------------------------------------------------------
-	%-------------------- EXPERIENCE
-	%-------------------------------------------------------
-    \onecolumnsectionheader{Experience}{R} 
-    
-    \org{Joanneum Research}{Graz, Austria}
-    \studypos{Research Assistant}{}{Oct 2020 - June 2022}
-    \input{experiences/JoanneumResearch_2020-2022.tex}
-    \sectionsep
-    % ----------------------------------
-    \org{Bytepoets}{Graz, Austria}
-    \studypos{Junior Developer}{}{Aug 2018 – April 2019}
-    \input{experiences/Bytepoets_2018-2019.tex}
 \end{minipage}
 \vfill
 
@@ -114,10 +136,22 @@
 \vfill
 \begin{minipage}[t]{\textwidth}
     %-------------------------------------------------------
-	%-------------------- WORKING EXPERIENCE CONTINUED
+	%-------------------- EXPERIENCE
 	%-------------------------------------------------------
-    \onecolumnsectionheader{Experience}{R}
+    \onecolumnsectionheader{Experience}{R} 
     
+    % ---------------------------------- 
+    \org{Joanneum Research}{Graz, Austria}
+    \studypos{Research Assistant}{}{Oct 2020 - June 2022}
+    \begin{onecolumncventry}[1]
+        \input{experiences/JoanneumResearch_2020-2022.tex}
+    \end{onecolumncventry}
+    % ----------------------------------
+    \org{Bytepoets}{Graz, Austria}
+    \studypos{Junior Developer}{}{Aug 2018 – April 2019}
+    \input{experiences/Bytepoets_2018-2019.tex}
+    \sectionsep
+    % ----------------------------------
     \org{IAIK}{Graz, Austria}
     \studypos{Institute of Applied Information Processing and Communications | Intern}{}{Aug 2017 – Nov 2017}
     \input{experiences/IAIK_2017.tex}
@@ -125,43 +159,19 @@
     % ---------------------------------- 
     \org{Lam Research}{Fremont, CA. \& Villach, Austria}
     \studypos{Electrical Engineer}{}{Sept 2012 – Sept 2014}
-    \begin{onecolumncventry}[0.88]
+    \begin{onecolumncventry}
         \input{experiences/LamResearch_2012-2014.tex}
     \end{onecolumncventry}
     % ----------------------------------
     \org{SEZ \& Lam Research}{Villach, Austria}
     \studypos{Electrical/Test Engineer}{}{Sep 2006 – Sept 2012}
-    \begin{onecolumncventry}[0.88]
+    \begin{onecolumncventry}
         \input{experiences/SEZ_LamResearch_2006-2012.tex}
     \end{onecolumncventry}
     % ----------------------------------
     \org{SEZ}{Villach, Austria}
     \studypos{Apprenticeship Mechatronics Engineer}{}{Sep 2002 – Mar 2006}
     \input{experiences/SEZ_2002-2006.tex}
-
-    %-------------------------------------------------------
-	%-------------------- COURSEWORK 
-	%-------------------------------------------------------
-    \onecolumnsectionheader{Coursework}{R}
-    
-    \begin{onecolumncventry}[0.88]
-        \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
-            \runsheader{M.Sc. degree program:}&
-            Knowledge Discovery \& Data Mining \bulletsep Machine Learning \bulletsep Deep Learning 
-            \par Web Technology (HTML5) \bulletsep Expert Systems \bulletsep Verification \& Testing 
-            \par Security Aspects in Software Development \bulletsep Principles of Brain Computation
-            \par General Management \& Organization \bulletsep Strategic \& Innovation Management \par Stress \& Time Management
-            \tightsep\\
-            &\\
-            \runsheader{B.Sc. degree program:}&
-            Data Structures \& Algorithms \bulletsep Statistics \& Probability \bulletsep Computer Vision 
-            \par Linear Algebra \& Analysis \bulletsep Computational Intelligence 
-            \bulletsep Operating Systems 
-            \par Software Maintenance \bulletsep IT Security \& Networking \bulletsep Intercultural Social Competence 
-            \bulletsep Industrial Sociology
-            \\
-        \end{tabularx}
-    \end{onecolumncventry}
 \end{minipage}
 \vfill
 \end{document}
