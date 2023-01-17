@@ -1,0 +1,159 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-----------------------------------------------------------
+%------------------------ Configuration
+%-----------------------------------------------------------
+
+\documentclass[a4paper]{resume-cv}
+
+% Configure margins 
+%\geometry{hmargin=1.5cm, vmargin=0.75cm, rmargin=1.5cm}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.2cm, footskip=.5cm}
+
+% Include contact data
+\input{contact-data_form.tex}
+
+%------------------------ Optional accent color (leave empty or comment line if not needed!)
+% Choose from dvipsnames of xcolor: https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+% e.g.: PineGreen, Emerald, TealBlue, BlueGreen, Aquamarine, RedViolet, RoyalBlue, Salmon, DarkOrchid, Fuchsia
+\coloraccentxcolor{SeaGreen}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+% Add the date of the last update on the top right corner
+\lastupdated
+
+%-----------------------------------------------------------
+%------------------------ Make title area
+%-----------------------------------------------------------
+%\photopath{./photos/profile.jpg} % Optional profile photo path (comment if not needed!)
+\maketitlearea
+
+%-----------------------------------------------------------
+%------------------------ PAGE ONE
+%-----------------------------------------------------------
+\vfill
+%\noindent
+\begin{minipage}[t]{\textwidth}
+	%-------------------------------------------------------
+	%-------------------- EDUCATION
+	%-------------------------------------------------------
+    % E.g.: for right alignement use \onecolumnsection{Sectionname}{R}
+    %\vspace{-\sectionseppt*2}
+    \onecolumnsectionheader{Education}{R}
+    \org{Graz University of Technology}{Graz, Austria}
+    \studypos{Diplom-Ingenieur (M.Sc.)}{in Software Engineering \& Management}{April 2018 - June 2022}
+    \begin{tightemize} % Description(s) bullet points
+        \item \textsf{Major:} Intelligent Systems
+        \item \textsf{Minor:} Management \& Strategy
+        \item \textsf{Grade:} Graduated with distinction
+        \item \textsf{Thesis:} Embedded Image-based Localization For Assessment Of Critical Infrastructure
+    \end{tightemize}
+    
+    \studypos{Bachelor of Science}{in Software Engineering \& Management}{Oct 2014 - April 2018}
+    \begin{tightemize} % Description(s) bullet points
+        \item \textsf{Thesis:} Modeling And Evaluating CPU Caches In Software (QEMU)
+    \end{tightemize}
+
+    % \org{BFI}{Klagenfurt, Austria} %Berufsförderungsinstitut (BFI)
+    % \studypos{Berufsreifeprüfung}{}{Oct 2012 - Feb 2014}
+
+	%-------------------------------------------------------
+	%-------------------- SKILLS
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Skills}{R}
+
+    \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
+        \runsheader{Operating Systems:}&
+        \faApple\space\space macOS x86-64/ARM64 \par
+        \faLinux\space GNU/Linux x86-32/64/ARM64
+        \tightsep\\
+
+        \runsheader{Linux Distributions:}&
+        Debian \bulletsep Ubuntu \bulletsep Arch \bulletsep openSUSE
+        \tightsep\\
+
+        \runsheader{Languages:}&
+        C \bulletsep C++ \bulletsep Python \bulletsep Kotlin \bulletsep Java \bulletsep Bash \bulletsep
+        JavaScript \bulletsep HTML \bulletsep Markdown \bulletsep \latex
+        \tightsep\\
+                
+        \runsheader{Conventions \& Practices:}&
+        CI/CD \bulletsep Git-flow \bulletsep XP \bulletsep Agile
+        MVC \bulletsep MVVM \bulletsep RESTful
+        \tightsep\\
+        
+        \runsheader{Tools:}&
+        Docker \bulletsep VS Code \bulletsep JetBrains
+        Git \bulletsep SVN \bulletsep Jira \bulletsep (Jenkins) \bulletsep Vim \bulletsep GDB
+        Conda \par Python-venv \bulletsep Terminal \bulletsep Tmux \bulletsep
+        Various Unix tools improving workflows
+        \\
+    
+    \end{tabularx}
+
+    %-------------------------------------------------------
+	%-------------------- EXPERIENCE
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Experience}{R} 
+    \org{Joanneum Research}{Graz, Austria}
+    \studypos{Research Assistant}{}{April 2018 - June 2022}
+    \input{experiences/JoanneumResearch_2018-2022.tex}
+    \sectionsep
+    % ----------------------------------
+    \org{Bytepoets}{Graz, Austria}
+    \studypos{Junior Developer}{}{Aug 2018 – April 2019}
+    \input{experiences/Bytepoets_2018-2019.tex}
+\end{minipage}
+\vfill
+
+\pagebreak
+%-----------------------------------------------------------
+%------------------------ PAGE TWO
+%-----------------------------------------------------------
+\vfill
+%\noindent
+\begin{minipage}[t]{\textwidth}
+    %-------------------------------------------------------
+	%-------------------- WORKING EXPERIENCE CONTINUED
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Experience}{R}
+    % ----------------------------------
+    \org{IAIK}{Graz, Austria}
+    \studypos{Institute of Applied Information Processing and Communications | Intern}{}{Aug 2017 – Nov 2017}
+    \input{experiences/IAIK_2017.tex}
+    \sectionsep
+    % ---------------------------------- 
+    \org{Lam Research}{Fremont, CA. \& Villach, Austria}
+    \studypos{Electrical Engineer}{}{Sept 2012 – Sept 2014}
+    \input{experiences/LamResearch_2012-2014.tex}
+    \sectionsep
+    % ----------------------------------
+    \org{SEZ \& Lam Research}{Villach, Austria}
+    \studypos{Electrical/Test Engineer}{}{Sep 2006 – Sept 2012}
+    \input{experiences/SEZ_LamResearch_2006-2012.tex}
+    \sectionsep
+    % ----------------------------------
+    \org{SEZ}{Villach, Austria}
+    \studypos{Apprenticeship Mechatronics Engineer}{}{Sep 2002 – Mar 2006}
+    \input{experiences/SEZ_2002-2006.tex}
+
+    %-------------------------------------------------------
+	%-------------------- COURSEWORK 
+	%-------------------------------------------------------
+    % TODO: Rework coursework to two-column layout; this one looks too crowded
+    % \onecolumnsectionheader{Coursework}{R}
+    % \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
+    %     \runsheader{M.Sc. degree program:}&
+    %     Knowledge Discovery \& Data Mining \bulletsep Web Technology (HTML5) \bulletsep Machine Learning \par
+    %     Deep Learning \bulletsep Expert Systems \bulletsep Verification \& Testing \bulletsep Security Aspects in Software Development \bulletsep Principles of Brain Computation (NEST) \bulletsep General Management \& Organization \par 
+    %     Strategic \& Innovation Management\bulletsep Stress \& Time Management
+    %     \tightsep\\
+    %     \runsheader{B.Sc. degree program:}&
+    %     Data Structures \& Algorithms \bulletsep Statistics \& Probability \bulletsep Linear Algebra \& Analysis \bulletsep Computer Vision \& Graphics \bulletsep Computational Intelligence \bulletsep Operating Systems \bulletsep Software Maintenance \bulletsep IT Security \& Networking \bulletsep Intercultural Social Competence \bulletsep Industrial Sociology
+    %     \\
+    % \end{tabularx}
+\end{minipage}
+\vfill
+
+\end{document}
