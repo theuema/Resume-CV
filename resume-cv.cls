@@ -385,3 +385,11 @@
 	\end{itemize}
 	\vspace{-\topsep}
 }
+
+% Usage: Increase right margin in entries that look odd going to \textwidth
+\newenvironment{onecolumncventry}[1][1]{%
+\begin{minipage}[t]{#1\textwidth}
+}{
+\end{minipage}
+\par\sectionsep
+}
