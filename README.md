@@ -10,10 +10,10 @@ Resume, CV and Coverletter in LaTeX!
 - [CV as one-column layout](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
 - [CV as two-column layout](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
 
-## CV one-column layout preview
+## CV one-column layout [Preview}
 ![Preview](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv.png)
 
-## CV two-column layout preview
+## CV two-column layout [Preview}
 ![Preview](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv_two-column.png)
 
 <br>
