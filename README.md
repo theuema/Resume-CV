@@ -16,15 +16,11 @@ Resume, CV and Cover Letter in LaTeX!
 ## Preview
 |Resume|Cover Letter|
 |:---:|:---:|
-| [![resume](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_resume.png)](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf)
-| [![coverletter](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_coverletter.png)](https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf)
-|
+| [![resume](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_resume.png)](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf) | [![coverletter](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_coverletter.png)](https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf) |
 
 |CV (one-column layout)|CV (two-column layout)|
 |:---:|:---:|
-| [![one-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
-| [![two-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv_two-column.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
-|
+| [![one-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf) | [![two-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv_two-column.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf) |
 
 <br>
 
