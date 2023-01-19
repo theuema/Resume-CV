@@ -139,12 +139,18 @@
 \newcommand{\tex}{\TeX}
 
 % Custom vspaces
-\newcommand{\sectionseppt}{10pt}
-\newcommand{\sectionsep}{\vspace{\sectionseppt}}
-\newcommand{\subsectionsep}{\vspace{7pt}}
-\newcommand{\medsep}{\vspace{3pt}}
+\newcommand{\sectionseppt}{12pt}
+\newcommand{\medseppt}{3pt}
 \newcommand{\tightseppt}{2pt}
+\newcommand{\negsubsectionseppt}{7pt}
+
+\newcommand{\sectionsep}{\vspace{\sectionseppt}}
+\newcommand{\medsep}{\vspace{\medseppt}}
+\newcommand{\negmedsep}{\vspace{-\medseppt}}
 \newcommand{\tightsep}{\vspace{\tightseppt}}
+\newcommand{\subsectionsep}{\vspace{\negsubsectionseppt}}
+\newcommand{\negsubsectionsep}{\vspace{-\negsubsectionseppt}}
+
 \newcommand{\hmedsep}{\hspace{6pt}}
 %-----------------------------------------------------------
 %------------------------ Title area
@@ -261,7 +267,7 @@
 % Make section in one-column layout
 % Usage: \onecolumnsection{Sectionname}{R| }; 'R' to right-align the section header
 \newcommand{\onecolumnsectionheader}[2]{
-	\sectionsep\subsectionsep
+	\sectionsep\medsep
 	\color{headings}
 	\ifthenelse{\equal{#2}{R}}{\rulestyle{\vhrulefill{0.4pt}}}{} % If 'R' draw rule left
 	\sectionstyle{#1}
@@ -391,5 +397,5 @@
 \begin{minipage}[t]{#1\textwidth}
 }{
 \end{minipage}
-\par\sectionsep
+\par
 }
