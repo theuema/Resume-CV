@@ -408,5 +408,5 @@
 \begin{minipage}[t]{#1\textwidth}
 }{
 \end{minipage}
-\par
+\par\sectionsep
 }
