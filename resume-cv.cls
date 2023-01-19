@@ -42,6 +42,8 @@
 \usepackage[export]{adjustbox}
 % Tabularx for automatic \textwidth linebreaks
 \usepackage{tabularx}
+% Gen dummy text
+\usepackage{blindtext}
 
 % -------- Date
 \usepackage[absolute]{textpos}
@@ -103,13 +105,18 @@
 % Rulestyle
 \newcommand*{\rulestyle}[1]{{\color{headings}#1}}
 
-% Lastupdated date style & command
-\newcommand*{\datestyle}[1]{{\fontsize{8pt}{10pt}\selectfont\color{date} #1}} %\scshape (smallcaps)
+% Date style
+\newcommand*{\datestyle}[1]{{\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont\color{date} #1}} %\scshape (smallcaps)
+% Lastupdated command
 \newcommand{\lastupdated}{
 	\begin{textblock}{60}(155,5)
-		\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}
 		\datestyle{Last Updated on \today}	
 	\end{textblock}
+}
+% Todaysdate command
+\newcommand{\todaysdate}{
+		\hspace*{\fill}
+		\datestyle{\today}	
 }
 
 % Contact data commands
@@ -140,16 +147,17 @@
 
 % Custom vspaces
 \newcommand{\sectionseppt}{12pt}
+\newcommand{\subsectionseppt}{7pt}
 \newcommand{\medseppt}{3pt}
 \newcommand{\tightseppt}{2pt}
-\newcommand{\negsubsectionseppt}{7pt}
 
 \newcommand{\sectionsep}{\vspace{\sectionseppt}}
+\newcommand{\subsectionsep}{\vspace{\subsectionseppt}}
 \newcommand{\medsep}{\vspace{\medseppt}}
-\newcommand{\negmedsep}{\vspace{-\medseppt}}
 \newcommand{\tightsep}{\vspace{\tightseppt}}
-\newcommand{\subsectionsep}{\vspace{\negsubsectionseppt}}
-\newcommand{\negsubsectionsep}{\vspace{-\negsubsectionseppt}}
+
+\newcommand{\negmedsep}{\vspace{-\medseppt}}
+\newcommand{\negsubsectionsep}{\vspace{-\subsectionseppt}}
 
 \newcommand{\hmedsep}{\hspace{6pt}}
 %-----------------------------------------------------------
@@ -218,8 +226,8 @@
 				\ifthenelse{\isundefined{\@dateofbirth}}{}{\vlinesep\dateofbirthwithicon}
 				\\[\headermedsep*2]
 			}
-			% write titlequote if defined
-			\ifthenelse{\isundefined{\@titlequote}}{}{\@titlequote}
+			% write titlequote if defined 
+			\ifthenelse{\equal{\@writequote}{Q}}{\@titlequote}{}
 		}
 		%\vspace{15pt}
 	\end{minipage}\\[\headermedsep*2]
@@ -229,9 +237,12 @@
 }
 
 % Make title area with contact information, including a photo area when a profile photo path is given
-% Usage: \maketitlearea{-| }; '-' to draw a line below the title area
-\newcommand{\maketitlearea}[1]{
+% Usage: \maketitlearea{-| }{Q| }
+% '-' draws a line below the title area
+% 'Q' includes the quote from contact-data_form
+\newcommand{\maketitlearea}[2]{
 	\def\@makerule{#1}
+	\def\@writequote{#2}
 	\ifx\@photopath\@undefined
 		\vspace*{1mm}	
 		\centering

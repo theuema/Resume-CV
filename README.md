@@ -2,20 +2,29 @@
 
 ***
 # Software Engineer Job Application Documents 
-Resume, CV and Coverletter in LaTeX!
+Resume, CV and Cover Letter in LaTeX!
 
 <br>
 
-*View/Download my current ...*
-- [Resume](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf)
-- [CV (one-column layout)](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
-- [CV (two-column layout)](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
+## See PDF of my current ...
+- [Resume PDF](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf)
+- [Cover Letter PDF](https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf)
+- [CV (one-column layout) PDF](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
+- [CV (two-column layout) PDF](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
 
-## CV one-column layout (Preview)
-![Preview](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv.png)
 
-## CV two-column layout (Preview)
-![Preview](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv_two-column.png)
+## Preview
+|Resume|Cover Letter|
+|:---:|:---:|
+| [![resume](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_resume.png)](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf)
+| [![coverletter](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_coverletter.png)](https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf)
+|
+
+|CV (one-column layout)|CV (two-column layout)|
+|:---:|:---:|
+| [![one-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
+| [![two-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/photos/preview_cv_two-column.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
+|
 
 <br>
 
