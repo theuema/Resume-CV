@@ -5,3 +5,5 @@ build/*
 *.DS_Store
 ## exclude log-files:
 *.log
+## IDE
+.vscode
