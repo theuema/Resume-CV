@@ -1,0 +1,73 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-----------------------------------------------------------
+%------------------------ Configuration
+%-----------------------------------------------------------
+
+\documentclass[a4paper]{./src/resume-cv}
+
+% Configure margins 
+%\geometry{hmargin=1.5cm, vmargin=0.75cm, rmargin=1.5cm}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.2cm, footskip=.5cm}
+
+% Include contact data
+\input{./src/contact-data_form.tex}
+
+%------------------------ Optional accent color (leave empty or comment line if not needed!)
+% Choose from dvipsnames of xcolor: https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+% e.g.: PineGreen, Emerald, TealBlue, BlueGreen, Aquamarine, RedViolet, RoyalBlue, Salmon, DarkOrchid, Fuchsia
+\coloraccentxcolor{SeaGreen}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+% Add the date of the last update on the top right corner
+%\lastupdated
+
+%-----------------------------------------------------------
+%------------------------ Make title area
+%-----------------------------------------------------------
+\photopath{./img/profile.jpg} % Optional profile photo path (comment if not needed!)
+% Usage: \maketitlearea{-| }{Q| }
+% '-' draws a line below the title area
+% 'Q' includes the quote from contact-data_form
+\maketitlearea{-}{}
+
+\vfill
+\begin{minipage}[t]{\textwidth}
+    \descript{Best Inc.}
+    0101 Bryant St\\
+    San Francisco, CA 94107\\
+    United States
+\end{minipage}
+
+% Write date
+\todaysdate
+
+\vfill
+\begin{minipage}[t]{\textwidth}
+    \runsubsection{My application as a Data Engineer at Best}
+    \sectionsep
+    \fontsize{12pt}{14pt}\selectfont % {fontsize}{linespacing}
+
+    Dear Hiring Team,
+    \sectionsep\\
+
+    I'm writing in response to the Lipsum Engineer position at \textit{Best}. \par Thank you very much for taking the time to consider my candidacy. 
+    \subsectionsep\\
+    
+    \blindtext
+    \\
+
+    \blindtext
+    \\
+
+    I'd be grateful to align with a company and ideas that I truly believe in. 
+    \subsectionsep\\
+
+    Sincerely yours,
+    \subsectionsep\\
+
+    Candidate 
+\end{minipage}
+\vfill
+\end{document}

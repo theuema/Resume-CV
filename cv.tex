@@ -1,0 +1,215 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-----------------------------------------------------------
+%------------------------ Configuration
+%-----------------------------------------------------------
+
+\documentclass[a4paper]{./src/resume-cv}
+
+% Configure margins 
+%\geometry{hmargin=1.5cm, vmargin=0.75cm, rmargin=1.5cm}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.2cm, footskip=.5cm}
+
+% Include contact data
+\input{./src/contact-data_form.tex}
+
+%------------------------ Optional accent color (leave empty or comment line if not needed!)
+% Choose from dvipsnames of xcolor: https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+% e.g.: PineGreen, Emerald, TealBlue, BlueGreen, Aquamarine, RedViolet, RoyalBlue, Salmon, DarkOrchid, Fuchsia
+\coloraccentxcolor{SeaGreen}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+% Add the date of the last update on the top right corner
+\lastupdated
+
+%-----------------------------------------------------------
+%------------------------ Make title area
+%-----------------------------------------------------------
+%\photopath{./img/profile.jpg} % Optional profile photo path (comment if not needed!)
+% Usage: \maketitlearea{-| }{Q| }
+% '-' draws a line below the title area
+% 'Q' includes the quote from contact-data_form
+\maketitlearea{}{Q}
+
+%-----------------------------------------------------------
+%------------------------ PAGE ONE
+%-----------------------------------------------------------
+%\vfill
+\begin{minipage}[t]{\textwidth}
+    %-------------------------------------------------------
+	%-------------------- RECENT ROLES
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Recent Roles}{R} 
+   
+    % ----------------------------------
+    \org{SkySpecs}{Graz, Austria \& Ann Arbor, MI}
+    \studypos{Data Scientist}{}{July 2023 - present}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/SkySpecs_2023-x.tex}
+    \end{onecolumncventry}
+
+    % ----------------------------------
+    \org{Joanneum Research}{Graz, Austria}
+    \studypos{Research Assistant}{}{Oct 2020 - June 2022}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/JoanneumResearch_2020-2022.tex} 
+    \end{onecolumncventry}
+
+    % ----------------------------------
+    \org{Bytepoets}{Graz, Austria}
+    \studypos{Junior Developer}{}{Aug 2018 – April 2019}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/Bytepoets_2018-2019.tex}
+    \end{onecolumncventry}
+
+\end{minipage}
+\vfill
+
+\pagebreak
+%-----------------------------------------------------------
+%------------------------ PAGE TWO
+%-----------------------------------------------------------
+\vfill
+\begin{minipage}[t]{\textwidth}
+	%-------------------------------------------------------
+	%-------------------- EDUCATION
+	%-------------------------------------------------------
+    % E.g.: for left alignement use \onecolumnsection{Sectionname}
+    \negsubsectionsep
+    \onecolumnsectionheader{Education}{R}
+    
+    \org{Graz University of Technology}{Graz, Austria}
+    \studypos{Diplom-Ingenieur (M.Sc.)}{in Software Engineering \& Management}{April 2018 - June 2022}
+    \medsep
+    \begin{tightemize} % Description(s) bullet points
+        \item \textsf{Grade:} Graduated with distinction
+        \item \textsf{Major:} Intelligent Systems \vlinesep \textsf{Minor:} Management \& Strategy
+        \item \textsf{Thesis:} Embedded Image-based Localization For Assessment Of Critical Infrastructure
+    \end{tightemize}
+    
+    \studypos{Bachelor of Science}{in Software Engineering \& Management}{Oct 2014 - April 2018}
+    \medsep
+    \begin{tightemize} % Description(s) bullet points
+        \item \textsf{Thesis:} Modeling And Evaluating CPU Caches In Software (QEMU)
+    \end{tightemize}
+
+    % \org{BFI}{Klagenfurt, Austria} %Berufsförderungsinstitut (BFI)
+    % \studypos{Berufsreifeprüfung}{}{Oct 2012 - Feb 2014}
+
+    %-------------------------------------------------------
+	%-------------------- COURSEWORK 
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Coursework}{R}
+    
+    \begin{onecolumncventry}
+        \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
+            \runsheader{M.Sc. degree program:}&
+            Knowledge Discovery \& Data Mining \bulletsep Machine Learning \bulletsep Deep Learning 
+            \par Web Technology (HTML5) \bulletsep Expert Systems \bulletsep Verification \& Testing 
+            \par Security Aspects in Software Development
+            \par General Management \& Organization \bulletsep Change Management %\par Stress \& Time Management
+            \par The Art of Feeback \bulletsep Intercultural Social Competence
+            \subsectionsep\\%&\\
+            \runsheader{B.Sc. degree program:}&
+            Data Structures \& Algorithms \bulletsep Statistics \& Probability
+            \par Linear Algebra \& Analysis \bulletsep Software Maintenance \bulletsep IT Security \& Networking
+            \par Operating Systems \bulletsep Computer Vision \& Graphics \bulletsep Computational Intelligence 
+            \\
+        \end{tabularx}
+        \negsubsectionsep
+    \end{onecolumncventry}
+
+	%-------------------------------------------------------
+	%-------------------- SKILLS
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Skills}{R}
+
+    \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
+        \runsheader{Operating Systems:}&
+        \faApple\space\space macOS x86-64/ARM64 \par
+        \faLinux\space GNU/Linux x86-32/64/ARM64
+        \tightsep\\
+
+        \runsheader{Linux Distributions:}&
+        Debian \bulletsep Arch \bulletsep RHEL 
+        \tightsep\\
+
+        \runsheader{Paradigms \& Practices:}&
+        Agile (DevOps, XP, Scrum) \bulletsep Git-flow \bulletsep OOP \bulletsep RESTful
+        \tightsep\\
+
+        \runsheader{Languages:}&
+        C \bulletsep C++ \bulletsep Bash \bulletsep Python \bulletsep Java \bulletsep Kotlin \bulletsep JavaScript \bulletsep AsciiDoc \bulletsep \latex
+        \tightsep\\
+
+        \runsheader{Databases:}&
+        SQL \bulletsep Couchbase NoSQL
+        \tightsep\\
+
+        \runsheader{Libraries \& Frameworks:}&
+        Pandas \bulletsep NumPy \bulletsep SciPy \bulletsep Scikit-learn \bulletsep Matplotlib \bulletsep Searborn \bulletsep Plotly
+        \par TensorFlow (Keras) \bulletsep PyTorch \bulletsep OpenCV \bulletsep ROS
+        \tightsep\\
+
+        \runsheader{Tools:}&
+        Docker \bulletsep VirtualBox \bulletsep KVM/QEMU \bulletsep Vagrant \bulletsep Conda \bulletsep Pyenv(-virtualenv) \bulletsep Poetry
+        \par Git \bulletsep Jira \bulletsep Gitlab CI/CD \bulletsep Vim \bulletsep Tmux \bulletsep POSIX commands and terminal utilities
+        \tightsep\\
+
+        \runsheader{Communication:}&
+        English (C1/2-level) \bulletsep German (native)
+        \\
+    \end{tabularx}
+
+\end{minipage}
+\vfill
+
+\pagebreak
+%-----------------------------------------------------------
+%------------------------ PAGE THREE
+%-----------------------------------------------------------
+\vfill
+\begin{minipage}[t]{\textwidth}
+    %-------------------------------------------------------
+	%-------------------- PRIOR EXPERIENCE
+	%-------------------------------------------------------
+    \onecolumnsectionheader{Prior Experience}{R} 
+
+    % ----------------------------------
+    \org{IAIK}{Graz, Austria}
+    \studypos{Institute of Applied Information Processing and Communications | Intern}{}{Aug 2017 – Nov 2017}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/IAIK_2017.tex}
+    \end{onecolumncventry}
+
+    % ---------------------------------- 
+    \org{Lam Research}{Villach, Austria \& Fremont, CA}
+    \studypos{Electrical Engineer}{}{Sept 2012 – Sept 2014}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/LamResearch_2012-2014.tex}
+    \end{onecolumncventry}
+    % ----------------------------------
+    \org{SEZ \& Lam Research}{Villach, Austria}
+    \studypos{Electrical/Test Engineer}{}{Sep 2006 – Sept 2012}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/SEZ_LamResearch_2006-2012.tex}
+    \end{onecolumncventry}
+    % ----------------------------------
+    \org{SEZ}{Villach, Austria}
+    \studypos{Apprenticeship Mechatronics Engineer}{}{Sep 2002 – Mar 2006}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/SEZ_2002-2006.tex}
+    \end{onecolumncventry}
+
+\end{minipage}
+\vfill
+
+\end{document}

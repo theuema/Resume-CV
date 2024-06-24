@@ -1,0 +1,256 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-----------------------------------------------------------
+%------------------------ Configuration
+%-----------------------------------------------------------
+
+\documentclass[a4paper]{./src/resume-cv}
+
+% Configure margins 
+%\geometry{hmargin=1.5cm, vmargin=0.75cm, rmargin=1.5cm}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.2cm, footskip=.5cm}
+
+% Include contact data
+\input{./src/contact-data_form.tex}
+
+%------------------------ Optional accent color (leave empty or comment line if not needed!)
+% Choose from dvipsnames of xcolor: https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+% e.g.: SeaGreen, PineGreen, Emerald, TealBlue, BlueGreen, Aquamarine, RedViolet, RoyalBlue, Salmon, DarkOrchid, Fuchsia
+\coloraccentxcolor{SeaGreen}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+% Add the date of the last update on the top right corner
+\lastupdated
+
+%-----------------------------------------------------------
+%------------------------ Make title area
+%-----------------------------------------------------------
+%\photopath{./img/profile.jpg} % Optional profile photo path (comment if no photo preferred!)
+% Make title area with rule ('-') below
+% Usage: \maketitlearea{-| }{Q| }
+% '-' draws a line below the title area
+% 'Q' includes the quote from contact-data_form
+\maketitlearea{-}{Q}
+
+%-----------------------------------------------------------
+%------------------------ PAGE ONE, COLUMN ONE
+%-----------------------------------------------------------
+\vfill % center between title area and bottom margin
+\noindent
+\begin{minipage}[t]{0.42\textwidth}
+	%-------------------------------------------------------
+	%-------------------- EDUCATION
+	%-------------------------------------------------------
+	\section{Education}
+	\subsection{Graz University of Technology}
+	\descript{Software Engineering \& Management}
+	\subsectionsep
+	% M.Sc.
+	\descript{Diplom-Ingenieur (M.Sc.)}
+	%\textsf{Grad.:} June 2022 \\
+	\sheaderperlocwithicons{April 2018 - June 2022}{Graz, Austria}
+	\textsf{Major:} Intelligent Systems \\
+	\textsf{Minor:} Management \& Strategy \\
+	\subsectionsep
+	% B.Sc.
+	\descript{Bachelor of Science}
+	\sheaderperlocwithicons{Oct 2014 - April 2018}{Graz, Austria}
+	%\textsf{Grad.:} April 2018
+	\subsectionsep
+	
+	% \runsubsection{BFI} \descript{| Berufsreifeprüfung}
+	% \sheaderperlocwithicons{Oct 2012 - Feb 2014}{Klagenfurt, Austria}
+	
+	\sectionsep
+
+	%-------------------------------------------------------
+	%-------------------- SKILLS 
+	%-------------------------------------------------------
+	\section{Skills}
+	
+	\sheader{Operating Systems}
+	\faApple\space\space macOS x86-64/ARM64\\
+	\faLinux\space GNU/Linux x86-32/64/ARM64
+	\subsectionsep
+
+	\sheader{Linux Distributions}
+	Debian \bulletsep Arch \bulletsep RHEL
+	\subsectionsep
+	
+	\sheader{Paradigms \& Practices}
+	Agile (DevOps, XP, Scrum)\\
+	Git-flow \bulletsep OOP \bulletsep RESTful
+	\subsectionsep
+
+	\sheader{Languages}
+	C \bulletsep C++ \bulletsep Bash \bulletsep Python \bulletsep Java \\
+	Kotlin \bulletsep JavaScript \bulletsep AsciiDoc \bulletsep \latex
+	\subsectionsep
+	
+	\sheader{Databases}
+	SQL \bulletsep Couchbase NoSQL
+	\subsectionsep
+
+	\sheader{Libraries \& Frameworks}
+	Pandas \bulletsep NumPy \bulletsep SciPy \bulletsep Scikit-learn\\
+	Matplotlib \bulletsep Seaborn \bulletsep Plotly \bulletsep OpenCV\\
+	PyTorch \bulletsep TensorFlow (Keras) \bulletsep ROS
+	\subsectionsep
+
+	\sheader{Tools}
+	Docker \bulletsep VirtualBox \bulletsep KVM/QEMU \bulletsep Vagrant\\
+	Conda \bulletsep Pyenv(-virtualenv) \bulletsep Poetry\\
+	Git \bulletsep Gitlab CI/CD \bulletsep Jira \\
+	Vim \bulletsep Tmux \bulletsep POSIX commands and terminal utilities\\
+	
+	\subsectionsep
+	
+	\sheader{Communication}
+	English (C1/2-level) \bulletsep German (native)
+	%\sectionsep
+
+\end{minipage}\quad % adjust space between minipages
+\hfill % fill up to right margin
+%-----------------------------------------------------------
+%------------------------ PAGE ONE, COLUMN TWO
+%-----------------------------------------------------------
+% Info: Do not insert a blank line between the two minipages!
+\begin{minipage}[t]{0.56\textwidth}
+	%-------------------------------------------------------
+	%-------------------- EXPERIENCE 
+	%-------------------------------------------------------
+	\section{Experience}
+	\runsubsection{SkySpecs} \descript{| Data Scientist }
+	\sheaderperlocwithicons{July 2023 - present}{Graz, Austria \& Ann Arbor, MI}
+	\vspace{\topsep} % Hacky fix for vertical space
+	\input{./experiences/SkySpecs_2023-x.tex}
+	\sectionsep
+	% ----------------------------------
+	\runsubsection{Joanneum Research} \descript{| Research Assistant }
+	\sheaderperlocwithicons{Oct 2020 – June 2022}{Graz, Austria}
+	%\vspace{\topsep} % Hacky fix for vertical space
+	\input{./experiences/JoanneumResearch_2020-2022.tex}
+	\sectionsep
+	% ----------------------------------
+\end{minipage}
+\vfill % center between title area and bottom margin
+
+\pagebreak
+%-----------------------------------------------------------
+%------------------------ PAGE TWO, COLUMN ONE
+%-----------------------------------------------------------
+\vfill
+\noindent
+\begin{minipage}[t]{0.42\textwidth}
+	%-------------------------------------------------------
+	%-------------------- COURSEWORK 
+	%-------------------------------------------------------
+	\section{Coursework}
+	% Postgraduate
+	\descript{M.Sc. degree program}\medsep
+	Knowledge Discovery \& Data Mining \\
+	Machine Learning \\
+	Deep Learning \\
+	Web Technology (HTML5) \\
+	Expert Systems \\
+	Verification \& Testing \\
+	Security Aspects in Software Development \\
+	General Management \& Organization \\
+	Change Management \\
+	The Art of Feeback \\
+	Intercultural Social Competence \\
+	%Stress \& Time Management
+	\subsectionsep
+	% Undergraduate
+	\descript{B.Sc. degree program}\medsep
+	Data Structures \& Algorithms \\
+	Statistics \& Probability \\
+	Linear Algebra \& Analysis \\
+	Computer Vision \& Graphics \\
+	Computational Intelligence \\
+	Operating Systems \\
+	Software Maintenance \\
+	IT Security \& Networking \\
+	
+	\sectionsep
+
+	%-------------------------------------------------------
+	%-------------------- INTERESTS
+	%-------------------------------------------------------
+	% Professional
+	\section{Interests} 
+	\subsection{Professional}
+	\vspace{6pt} % fix not including vspace after subsection
+	\begin{tightemize}
+		\item Data Science and Data Engineering
+		\item Automation Pipelines, Containerization, and Virtualization
+		\item Intelligent Systems, Machine Learning, and Deep Learning 
+		\item Operating Systems and Linux Distributions
+		\item Cryptology, Privacy, and System Security
+	\end{tightemize}
+	\subsectionsep
+	
+	% Personal
+	\subsection{Personal}
+	\vspace{6pt} % fix not including vspace after subsection
+	\begin{tightemize}
+		\item \textsf{Music:} Expressing my love for music through extravagant and overly priced headphones while actively blocking out the remaining world around me.
+		\item \textsf{Sports and Health:} I enjoy keeping my body healthy and fit through strength training in my home gym to compensate for the sedentary profession. 
+		\item \textsf{Nature:} Growing up in the mountains of Carinthia, I get a kick out of fresh air in peaceful and mountainous surroundings.
+	\end{tightemize}
+	\subsectionsep
+	
+\end{minipage}\quad % adjust space between minipages
+\hfill % fill up to right margin
+%-----------------------------------------------------------
+%------------------------ PAGE TWO, COLUMN TWO
+%-----------------------------------------------------------
+% Info: Do not insert a blank line between the two minipages!
+\begin{minipage}[t]{0.56\textwidth}
+	%manual spacing to fit 2-page working experience 
+	%(sectionheader fontsize + titlespacing{\section})
+	\vspace{36pt plus 4pt minus 2pt} 
+	
+	%-------------------------------------------------------
+	%-------------------- WORKING EXPERIENCE CONTINUED 
+	%-------------------------------------------------------
+	\runsubsection{Bytepoets} \descript{| Junior Developer }
+	\sheaderperlocwithicons{Aug 2018 – April 2019}{Graz, Austria}
+	\input{./experiences/Bytepoets_2018-2019.tex}
+	\sectionsep
+	% ----------------------------------
+	\runsubsection{IAIK} \descript{| Intern }
+	\sheader{Institute of Applied Information Processing and Communications}
+	\sheaderperlocwithicons{Aug 2017 – Nov 2017}{Graz, Austria}
+	\input{./experiences/IAIK_2017.tex}
+	\sectionsep
+	% ----------------------------------
+	\runsubsection{Lam Research} \descript{| Electrical Engineer }
+	\sheaderperlocwithicons{Sept 2012 – Sept 2014}{Villach, Austria \& Fremont, CA}
+	\input{./experiences/LamResearch_2012-2014.tex}
+	\sectionsep
+	% ----------------------------------
+	\runsubsection{SEZ \& Lam Research}
+	\descript{| Electrical/Test Engineer}
+	\sheaderperlocwithicons{Sep 2006 – Sept 2012}{Villach, Austria}
+	\input{./experiences/SEZ_LamResearch_2006-2012.tex}
+	\sectionsep
+	% % ----------------------------------
+	% \runsubsection{SEZ}
+	% \descript{| Apprenticeship Mechatronics Engineer}
+	% \sheaderperlocwithicons{Sep 2002 – Mar 2006}{Villach, Austria}
+	% \input{./experiences/SEZ_2002-2006.tex}
+	% \sectionsep
+	%-------------------------------------------------------
+	%-------------------- RECENT EXPERIENCE 
+	%-------------------------------------------------------
+	%\section{Recent Experience}
+	% ----------------------------------
+	%\sheader{2020: Neural Networks}
+	%Discuss Feed-forward, Convolutional and Recurrent Neural Networks, weight-space symmetries, network training, error back propagation, various training algorithms and regularization in Neural Networks. Use TensorFlow and Keras for assignments. \sectionsep
+
+\end{minipage}
+\vfill
+
+\end{document} 

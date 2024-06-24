@@ -1,0 +1,9 @@
+### Only consider .pdf in build folder:
+build/*
+!build/*.pdf
+## exclude macOS metadata:
+*.DS_Store
+## exclude log-files:
+*.log
+## IDE
+.vscode
