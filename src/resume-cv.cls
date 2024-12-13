@@ -181,13 +181,27 @@
 \newcommand{\linkedinwithicon}{\faLinkedin\space\href{https://linkedin.com/in/\@linkedinuser}{\@linkedinuser}}
 
 % Make profile photo area 
+% \newcommand{\makephotoarea}{
+% 	\begin{minipage}[t]{0.1475\textwidth}
+% 		\begin{adjustbox}{valign=c}
+% 			\centering
+% 			\noindent\includegraphics[width=3cm]{\@photopath}
+% 		\end{adjustbox}
+% 	\end{minipage}
+% }
+% Make profile photo area with TikZ and rounded corners
+\usepackage{tikz}
 \newcommand{\makephotoarea}{
-	\begin{minipage}[t]{0.1475\textwidth}
-		\begin{adjustbox}{valign=c}
-			\centering
-			\noindent\includegraphics[width=3cm]{\@photopath}
-		\end{adjustbox}
-	\end{minipage}
+    \begin{minipage}[t]{0.1475\textwidth}
+        \begin{adjustbox}{valign=c}
+            \centering
+            \noindent
+            \begin{tikzpicture}
+                \clip[rounded corners=0.25cm] (0,0) rectangle (3cm,3cm);
+                \node[anchor=south west, inner sep=0] at (0,0) {\includegraphics[width=3cm]{\@photopath}};
+            \end{tikzpicture}
+        \end{adjustbox}
+    \end{minipage}
 }
 
 % Make title area with contact information
@@ -257,7 +271,7 @@
 			\centering
 			\maketitlecontactarea
 		\else
-			\makephotoarea\quad % adjust space between photo and contact area
+			\makephotoarea%\quad % adjust space between photo and contact area
 			\maketitlecontactarea	
 		\fi
 	\fi

@@ -6,15 +6,12 @@ BUILD_DIR = build
 EXPERIENCES = $(wildcard experiences/*.tex)
 SRCS = $(wildcard src/*.tex) src/resume-cv.cls
 
-all: coverletter cv cv_two resume
+all: coverletter cv resume
 
 coverletter: coverletter.tex $(EXPERIENCES) $(SRCS)
 	$(CC) -output-directory=$(BUILD_DIR) $<
 
 cv: cv.tex $(EXPERIENCES) $(SRCS)
-	$(CC) -output-directory=$(BUILD_DIR) $<
-
-cv_two: cv_two-col.tex $(EXPERIENCES) $(SRCS)
 	$(CC) -output-directory=$(BUILD_DIR) $<
 
 resume: resume.tex $(EXPERIENCES) $(SRCS)

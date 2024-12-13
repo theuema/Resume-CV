@@ -7,20 +7,55 @@ Resume, CV and Cover Letter in LaTeX!
 <br>
 
 ## See PDF of my current ...
-- [Resume PDF](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf)
-- [Cover Letter PDF](https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf)
-- [CV (one-column layout) PDF](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
-- [CV (two-column layout) PDF](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf)
+- [CV](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf)
+- [Resume](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf)
 
 
 ## Preview
-|Resume|Cover Letter|
-|:---:|:---:|
-| [![resume](https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_resume.png)](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf) | [![coverletter](https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_coverletter.png)](https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf) |
 
-|CV (one-column layout)|CV (two-column layout)|
+<!-- Ensure that the columns of the tables have the same width -->
+<table>
+<tr>
+  <th align="center" width="50%">Resume</th>
+  <th align="center" width="50%">CV</th>
+</tr>
+<tr>
+  <td align="center">
+    <a href="https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf">
+      <img src="https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_resume.png" alt="resume">
+    </a>
+  </td>
+  <td align="center">
+    <a href="https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf">
+      <img src="https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_cv.png" alt="cv">
+    </a>
+  </td>
+</tr>
+</table>
+
+<table>
+<tr>
+  <th align="center" colspan="2">Cover letter (template)</th>
+</tr>
+<tr>
+  <td align="center" width="50%">
+    <a href="https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf">
+      <img src="https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_coverletter.png" alt="coverletter">
+    </a>
+  </td>
+  <td width="50%"></td>
+</tr>
+</table>
+
+
+<!-- ## Preview
+|Resume|CV|
 |:---:|:---:|
-| [![one-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_cv.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf) | [![two-column](https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_cv_two-column.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv_two-col.pdf) |
+| [![resume](https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_resume.png)](https://github.com/theuema/Resume-CV/tree/main/build/resume.pdf) | [![cv](https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_cv.png)](https://github.com/theuema/Resume-CV/tree/main/build/cv.pdf) |
+
+|CV (one-column layout)||
+|:---:|:---:|
+| [![coverletter](https://raw.githubusercontent.com/theuema/Resume-CV/main/img/preview_coverletter.png)](https://github.com/theuema/Resume-CV/tree/main/build/coverletter.pdf) | | -->
 
 <br>
 

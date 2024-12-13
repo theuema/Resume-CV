@@ -26,16 +26,16 @@
 %-----------------------------------------------------------
 %------------------------ Make title area
 %-----------------------------------------------------------
-%\photopath{./img/profile.jpg} % Optional profile photo path (comment if not needed!)
+\photopath{./img/profile.jpg} % Optional profile photo path (comment if not needed!)
 % Usage: \maketitlearea{-| }{Q| }
 % '-' draws a line below the title area
 % 'Q' includes the quote from contact-data_form
-\maketitlearea{}{-}
+\maketitlearea{}{Q}
 
 %-----------------------------------------------------------
 %------------------------ PAGE ONE
 %-----------------------------------------------------------
-%\vfill
+\vfill
 \begin{minipage}[t]{\textwidth}
     %-------------------------------------------------------
 	%-------------------- SUMMARY
@@ -54,56 +54,48 @@
    
     \end{onecolumncventry}
 
-	%-------------------------------------------------------
-	%-------------------- EDUCATION
-	%-------------------------------------------------------
-    \negsubsectionsep
-    \onecolumnsectionheader{Education}{R}
-    
-    \org{Graz University of Technology}{Graz, Austria}
-    \studypos{Diplom-Ingenieur (M.Sc.)}{in Software Engineering \& Management}{April 2018 - June 2022}
-    \begin{tightemize} % Description(s) bullet points
-        \item \textsf{Grade:} Graduated with distinction
-        \item \textsf{Major:} Intelligent Systems \vlinesep \textsf{Minor:} Management \& Strategy
-        \item \textsf{Thesis:} Embedded Image-based Localization For Assessment Of Critical Infrastructure
-    \end{tightemize}
-    
-    \studypos{Bachelor of Science}{in Software Engineering \& Management}{Oct 2014 - April 2018}
-    \begin{tightemize} % Description(s) bullet points
-        \item \textsf{Thesis:} Modeling And Evaluating CPU Caches In Software (QEMU)
-    \end{tightemize}
-
-    % \org{BFI}{Klagenfurt, Austria} %Berufsförderungsinstitut (BFI)
-    % \studypos{Berufsreifeprüfung}{}{Oct 2012 - Feb 2014}
-
+    % \negsubsectionsep
+    % \sectionsep
+    \vspace{30pt}
     %-------------------------------------------------------
-	%-------------------- COURSEWORK 
-	%-------------------------------------------------------
+    %-------------------- EXPERIENCE
     %-------------------------------------------------------
-	%-------------------- COURSEWORK 
-	%-------------------------------------------------------
-    \onecolumnsectionheader{Coursework}{R}
-    
-    \begin{onecolumncventry}[1]
-        \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
-            \runsheader{M.Sc. degree program:}&
-            Knowledge Discovery \& Data Mining \bulletsep Machine Learning \bulletsep Deep Learning 
-            \par Security Aspects in Software Development \bulletsep Verification \& Testing
-            \par Web Technology \bulletsep Expert Systems
-            \par General Management \& Organization \bulletsep Change Management
-            \par The Art of Feedback \bulletsep Intercultural Social Competence
+    \onecolumnsectionheader{Recent Roles}{R} 
+    % ---------------------------------- 
+    \org{SkySpecs}{Graz, Austria \& Ann Arbor, MI}
+    \studypos{Data Scientist | Innovation}{}{Oct 2024 - present}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/SkySpecs_2024-x.tex}
+    \end{onecolumncventry}
+    % ---------------------------------- 
+    % ---------------------------------- 
+    \org{SkySpecs}{Graz, Austria \& Ann Arbor, MI}
+    \studypos{Data Scientist | Product Improvement}{}{July 2023 - Oct 2024}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/SkySpecs_2023-2024.tex}
+    \end{onecolumncventry}
+    % ---------------------------------- 
+\end{minipage}
+\vfill
 
-            \subsectionsep\\%&\\
-            \runsheader{B.Sc. degree program:}&
-            Data Structures \& Algorithms \bulletsep Statistics \& Probability
-            \par Linear Algebra \& Analysis \bulletsep Software Maintenance \bulletsep IT Security \& Networking
-            \par Operating Systems \bulletsep Computer Vision \& Graphics \bulletsep Computational Intelligence 
-            \\
-        \end{tabularx}
-        \negsubsectionsep
+\pagebreak
+%-----------------------------------------------------------
+%------------------------ PAGE TWO
+%-----------------------------------------------------------
+\vfill
+\begin{minipage}[t]{\textwidth}
+
+    % ---------------------------------- 
+    \org{Joanneum Research}{Graz, Austria}
+    \studypos{Research Assistant}{}{Oct 2020 - June 2022}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/JoanneumResearch_2020-2022.tex}
     \end{onecolumncventry}
 
-	%-------------------------------------------------------
+    %-------------------------------------------------------
 	%-------------------- SKILLS
 	%-------------------------------------------------------
     \onecolumnsectionheader{Skills}{R}
@@ -141,57 +133,57 @@
         \tightsep\\
 
         \runsheader{Communication:}&
-        English (C1/2-level) \bulletsep German (native)
+        English (C1+/C2-level) \bulletsep German (native)
         \\
     \end{tabularx}
-\end{minipage}
-%\vfill
 
-\pagebreak
-%-----------------------------------------------------------
-%------------------------ PAGE TWO
-%-----------------------------------------------------------
-\vfill
-\begin{minipage}[t]{\textwidth}
     %-------------------------------------------------------
-	%-------------------- EXPERIENCE
+    %-------------------- EDUCATION
+    %-------------------------------------------------------
+    \onecolumnsectionheader{Education}{R}
+    
+    \org{Graz University of Technology}{Graz, Austria}
+    \studypos{Diplom-Ingenieur (M.Sc.)}{in Software Engineering \& Management}{April 2018 - June 2022}
+    \begin{tightemize} % Description(s) bullet points
+        \item \textsf{Grade:} Graduated with distinction
+        \item \textsf{Major:} Intelligent Systems \vlinesep \textsf{Minor:} Management \& Strategy
+        \item \textsf{Thesis:} Embedded Image-based Localization For Assessment Of Critical Infrastructure
+    \end{tightemize}
+    
+    \studypos{Bachelor of Science}{in Software Engineering \& Management}{Oct 2014 - April 2018}
+    \begin{tightemize} % Description(s) bullet points
+        \item \textsf{Thesis:} Modeling And Evaluating CPU Caches In Software (QEMU)
+    \end{tightemize}
+
+    % \org{BFI}{Klagenfurt, Austria} %Berufsförderungsinstitut (BFI)
+    % \studypos{Berufsreifeprüfung}{}{Oct 2012 - Feb 2014}
+
+    %-------------------------------------------------------
+	%-------------------- COURSEWORK 
 	%-------------------------------------------------------
-    \onecolumnsectionheader{Recent Roles}{R} 
-    % ---------------------------------- 
-    \org{SkySpecs}{Graz, Austria \& Ann Arbor, MI}
-    \studypos{Data Scientist | Innovation}{}{Oct 2024 - present}
-    \medsep
-    \begin{onecolumncventry}[0.94]
-        \input{./experiences/SkySpecs_2024-x.tex}
+    \onecolumnsectionheader{Coursework}{R}
+    
+    \begin{onecolumncventry}[1]
+        \begin{tabularx}{\linewidth}{ @{} lX @{} } %@{\quad}
+            \runsheader{M.Sc. degree program:}&
+            Knowledge Discovery \& Data Mining \bulletsep Machine Learning \bulletsep Deep Learning 
+            \par Security Aspects in Software Development \bulletsep Verification \& Testing
+            \par Web Technology \bulletsep Expert Systems
+            \par General Management \& Organization \bulletsep Change Management
+            \par The Art of Feedback \bulletsep Intercultural Social Competence
+
+            \subsectionsep\\%&\\
+            \runsheader{B.Sc. degree program:}&
+            Data Structures \& Algorithms \bulletsep Statistics \& Probability
+            \par Linear Algebra \& Analysis \bulletsep Software Maintenance \bulletsep IT Security \& Networking
+            \par Operating Systems \bulletsep Computer Vision \& Graphics \bulletsep Computational Intelligence 
+            \\
+        \end{tabularx}
+        \negsubsectionsep
     \end{onecolumncventry}
-    % ---------------------------------- 
-    % ---------------------------------- 
-    \org{SkySpecs}{Graz, Austria \& Ann Arbor, MI}
-    \studypos{Data Scientist | Product Improvement}{}{July 2023 - Oct 2024}
-    \medsep
-    \begin{onecolumncventry}[0.94]
-        \input{./experiences/SkySpecs_2023-2024.tex}
-    \end{onecolumncventry}
-    % ---------------------------------- 
-    % ---------------------------------- 
-    \org{Joanneum Research}{Graz, Austria}
-    \studypos{Research Assistant}{}{Oct 2020 - June 2022}
-    \medsep
-    \begin{onecolumncventry}[0.94]
-        \input{./experiences/JoanneumResearch_2020-2022.tex}
-    \end{onecolumncventry}
-    % ----------------------------------
-    \org{Bytepoets}{Graz, Austria}
-    \studypos{Junior Developer}{}{Aug 2018 – April 2019}
-    \medsep
-    \begin{onecolumncventry}[0.94]
-        \input{./experiences/Bytepoets_2018-2019.tex}
-    \end{onecolumncventry}
-    \sectionsep
-    % ----------------------------------
 
 \end{minipage}
-%\vfill
+\vfill
 
 \pagebreak
 %-----------------------------------------------------------
@@ -203,7 +195,15 @@
 	%-------------------- PRIOR EXPERIENCE
 	%-------------------------------------------------------
     \onecolumnsectionheader{Prior Experience}{R}
-    % ---------------------------------- 
+    % ----------------------------------
+    \org{Bytepoets}{Graz, Austria}
+    \studypos{Junior Developer}{}{Aug 2018 – April 2019}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/Bytepoets_2018-2019.tex}
+    \end{onecolumncventry}
+    \sectionsep
+    % ----------------------------------
     \org{IAIK}{Graz, Austria}
     \studypos{Institute of Applied Information Processing and Communications | Intern}{}{Aug 2017 – Nov 2017}
     \medsep
@@ -230,5 +230,5 @@
     \medsep
     \input{./experiences/SEZ_2002-2006.tex}
 \end{minipage}
-%\vfill
+\vfill
 \end{document}
