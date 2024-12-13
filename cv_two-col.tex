@@ -26,7 +26,7 @@
 %-----------------------------------------------------------
 %------------------------ Make title area
 %-----------------------------------------------------------
-%\photopath{./img/profile.jpg} % Optional profile photo path (comment if no photo preferred!)
+\photopath{./img/profile.jpg} % Optional profile photo path (comment if no photo preferred!)
 % Make title area with rule ('-') below
 % Usage: \maketitlearea{-| }{Q| }
 % '-' draws a line below the title area
@@ -120,17 +120,17 @@
 	%-------------------------------------------------------
 	%-------------------- EXPERIENCE 
 	%-------------------------------------------------------
-	\section{Experience}
-	\runsubsection{SkySpecs} \descript{| Data Scientist }
-	\sheaderperlocwithicons{July 2023 - present}{Graz, Austria \& Ann Arbor, MI}
+	\section{Recent Roles}
+	\runsubsection{SkySpecs} \descript{| Data Scientist - Innovation}
+	\sheaderperlocwithicons{Oct 2024 - present}{Graz, Austria \& Ann Arbor, MI}
 	\vspace{\topsep} % Hacky fix for vertical space
-	\input{./experiences/SkySpecs_2023-x.tex}
+	\input{./experiences/SkySpecs_2024-x.tex}
 	\sectionsep
 	% ----------------------------------
-	\runsubsection{Joanneum Research} \descript{| Research Assistant }
-	\sheaderperlocwithicons{Oct 2020 – June 2022}{Graz, Austria}
-	%\vspace{\topsep} % Hacky fix for vertical space
-	\input{./experiences/JoanneumResearch_2020-2022.tex}
+	\runsubsection{SkySpecs} \descript{| Data Scientist - Product Improvement}
+	\sheaderperlocwithicons{July 2023 - Oct 2024}{Graz, Austria \& Ann Arbor, MI}
+	\vspace{\topsep} % Hacky fix for vertical space
+	\input{./experiences/SkySpecs_2023-2024.tex}
 	\sectionsep
 	% ----------------------------------
 \end{minipage}
@@ -215,6 +215,12 @@
 	%-------------------------------------------------------
 	%-------------------- WORKING EXPERIENCE CONTINUED 
 	%-------------------------------------------------------
+	\runsubsection{Joanneum Research} \descript{| Research Assistant }
+	\sheaderperlocwithicons{Oct 2020 – June 2022}{Graz, Austria}
+	%\vspace{\topsep} % Hacky fix for vertical space
+	\input{./experiences/JoanneumResearch_2020-2022.tex}
+	\sectionsep
+	% ----------------------------------
 	\runsubsection{Bytepoets} \descript{| Junior Developer }
 	\sheaderperlocwithicons{Aug 2018 – April 2019}{Graz, Austria}
 	\input{./experiences/Bytepoets_2018-2019.tex}
@@ -225,17 +231,17 @@
 	\sheaderperlocwithicons{Aug 2017 – Nov 2017}{Graz, Austria}
 	\input{./experiences/IAIK_2017.tex}
 	\sectionsep
-	% ----------------------------------
-	\runsubsection{Lam Research} \descript{| Electrical Engineer }
-	\sheaderperlocwithicons{Sept 2012 – Sept 2014}{Villach, Austria \& Fremont, CA}
-	\input{./experiences/LamResearch_2012-2014.tex}
-	\sectionsep
-	% ----------------------------------
-	\runsubsection{SEZ \& Lam Research}
-	\descript{| Electrical/Test Engineer}
-	\sheaderperlocwithicons{Sep 2006 – Sept 2012}{Villach, Austria}
-	\input{./experiences/SEZ_LamResearch_2006-2012.tex}
-	\sectionsep
+	% % ----------------------------------
+	% \runsubsection{Lam Research} \descript{| Electrical Engineer }
+	% \sheaderperlocwithicons{Sept 2012 – Sept 2014}{Villach, Austria \& Fremont, CA}
+	% \input{./experiences/LamResearch_2012-2014.tex}
+	% \sectionsep
+	% % ----------------------------------
+	% \runsubsection{SEZ \& Lam Research}
+	% \descript{| Electrical/Test Engineer}
+	% \sheaderperlocwithicons{Sep 2006 – Sept 2012}{Villach, Austria}
+	% \input{./experiences/SEZ_LamResearch_2006-2012.tex}
+	% \sectionsep
 	% % ----------------------------------
 	% \runsubsection{SEZ}
 	% \descript{| Apprenticeship Mechatronics Engineer}
@@ -249,6 +255,43 @@
 	% ----------------------------------
 	%\sheader{2020: Neural Networks}
 	%Discuss Feed-forward, Convolutional and Recurrent Neural Networks, weight-space symmetries, network training, error back propagation, various training algorithms and regularization in Neural Networks. Use TensorFlow and Keras for assignments. \sectionsep
+
+\end{minipage}
+\vfill
+
+\pagebreak
+%-----------------------------------------------------------
+%------------------------ PAGE THREE
+%-----------------------------------------------------------
+\vfill
+\begin{minipage}[t]{\textwidth}
+    %-------------------------------------------------------
+	%-------------------- PRIOR EXPERIENCE
+	%-------------------------------------------------------
+    % \onecolumnsectionheader{Prior Experience}{R} 
+	\section{Prior Experience}
+
+    % ---------------------------------- 
+    \org{Lam Research}{Villach, Austria \& Fremont, CA}
+    \studypos{Electrical Engineer}{}{Sept 2012 – Sept 2014}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/LamResearch_2012-2014.tex}
+    \end{onecolumncventry}
+    % ----------------------------------
+    \org{SEZ \& Lam Research}{Villach, Austria}
+    \studypos{Electrical/Test Engineer}{}{Sep 2006 – Sept 2012}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/SEZ_LamResearch_2006-2012.tex}
+    \end{onecolumncventry}
+    % ----------------------------------
+    \org{SEZ}{Villach, Austria}
+    \studypos{Apprenticeship Mechatronics Engineer}{}{Sep 2002 – Mar 2006}
+    \medsep
+    \begin{onecolumncventry}[0.94]
+        \input{./experiences/SEZ_2002-2006.tex}
+    \end{onecolumncventry}
 
 \end{minipage}
 \vfill
