@@ -198,7 +198,7 @@
             \noindent
             \begin{tikzpicture}
                 \clip[rounded corners=0.25cm] (0,0) rectangle (3cm,3cm);
-                \node[anchor=south west, inner sep=0] at (0,0) {\includegraphics[width=3cm]{\@photopath}};
+                \node[anchor=south west, inner sep=0] at (0,0) {\includegraphics[width=3cm, height=3cm]{\@photopath}};
             \end{tikzpicture}
         \end{adjustbox}
     \end{minipage}
